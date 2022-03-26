@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 3px 3px 2px rgb(31, 28, 28);
+    text-decoration: wavy;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+body{
+    background-color: rgb(22, 29, 108);
+}
+input[type=text],input[type=number],#country,input[type=email]{
+    margin: 3px 0;
+    padding: 10px;
+    width: 60%;
+    border: 1px solid grey;
+    border-radius:20px;
+}
+input:focus{
+    border: solid 2px black;
+}
+.container{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 450;
+    border-radius: 30px;
+    background-color: white;
+    line-height: 2;
+    border: 2px;
+    box-shadow: 3px;
+    background-color: white;
+    color: black;
+    margin: auto;
+    align-items: center;
+    width: 600px;
+    height: 450px;
+    margin-top:30px;
+    margin-left:30%;
+    padding: 20px;
+    border: 2px solid #808080;
+    border-radius:20px;
+    box-shadow: 3px 3px 3px rgb(99, 98, 98);
+}
+
+#payment{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(61, 121, 23);
+    border-radius: 30px;
+    border: 2px solid rgb(61, 121, 23);
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    margin-left: 35%;
+    box-shadow: 2px 2px 2px grey;
+    margin-top: 1%;
+}
+#payment:hover{
+    background-color: white;
+    color: rgb(61, 121, 23);
+    border: 2px solid rgb(61, 121, 23);
+}
+ 

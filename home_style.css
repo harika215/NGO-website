@@ -1,0 +1,336 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  font-weight: 500;
+  font-size: 25px;
+  color:rgb(52, 61, 168);
+  margin: 15px;
+}
+/* Hope logo */
+#hope{
+padding-left: 10px;
+padding-right: 30%;
+float: left;
+}
+/* animation for navigation bar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: rgb(39, 48, 144);
+}
+.navbarlinks ul{
+  margin: 0;
+  display: flex;
+  padding: 0;
+}
+.navbarlinks li{
+  list-style: none;
+}
+.navbarlinks li a{
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  color: rgb(39, 48, 144);
+}
+.navbarlinks li:hover{
+  background-color: rgb(200, 194, 194);
+}
+
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: rgb(39, 48, 144);
+  border-radius: 10px;
+  color: white;
+}
+
+@media (max-width:700px) {
+  .toggle-button{
+    display: flex;
+    margin-top: 10px;
+  }
+  .navbarlinks{
+    display: none;
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbarlinks ul{
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbarlinks li{
+    background-color: rgb(39, 48, 144);
+    text-align: center;
+  }
+  .navbarlinks li:hover{
+    background-color: rgb(15, 13, 13);
+  }
+  .navbarlinks li a{
+    padding: .5rem 1rem;
+    color: white;
+  }
+  .navbarlinks.active{
+    display: flex;
+  }
+  .causetext,.seperate,.abouttext{
+    font-size: 13px;
+  }
+  #aboutimg{
+    height: 10px;
+  }
+  #cause_img{
+    height: 180px;
+  }
+  #donateimg{
+    height: 50px;
+    width: 300px;
+  }
+  .sub img{
+    height: 100px;
+    width: 50px;
+  }
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 100%;
+max-height: 20%;
+position: relative;
+margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: rgb(233, 238, 85);
+font-size: 45px;
+padding: 10px 10px;
+font-weight: 600;
+position: absolute;
+left : 30px;
+top : 100px;
+text-align: left;
+text-shadow: 3px 3px 3px black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 2s;
+animation-name: fade;
+animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .3} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .3} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+.prev, .next,.text {font-size: 20px}
+}
+
+.responsive{
+  height: auto;
+  width: 100%;
+}
+/* About us  */
+.about{
+display: flex;
+width: 100%;
+height: auto;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+color: rgb(85, 84, 83);
+font-weight: 500;
+font-size: 16px;
+padding: 10px;
+line-height: 1.7;
+}
+#aboutimg{
+margin: 0 2%;
+float: left;
+width: 350px;
+padding-top: 10px;
+height: 450px;
+}
+.abouttext{
+float: right;
+padding-left: 20px;
+}
+
+/* Our Beginning */
+.causetext{
+float: left;
+padding-right: 30px;
+}
+#cause_img{
+margin: 0 2%;
+float: right;
+width: 100%;
+padding: 30px;
+}
+
+/* What do we provide? */
+.sub{
+float: left;
+width: 25%;
+padding: 15px;
+text-align: center;
+}
+.content{
+background-color: white;
+border-color: rgb(52, 61, 168);
+padding: 10px;
+color: rgb(52, 61, 168);
+}
+.content:hover{
+background-color: rgb(116, 125, 229);
+border-color: white;
+color:white
+}
+.provide::after {
+content: "";
+clear: both;
+display: table;
+}
+.sub img{
+border : black 1px;
+width: 320px;
+height: 260px;
+float: left;
+border-radius: 50%;
+}
+img{
+  max-width: 100%;
+}
+
+/* Donate  */
+.donate{
+float: right;
+padding-right: 20px;
+}
+.seperate{
+background-color: rgb(39, 48, 144);
+color: white;
+padding: 25px;
+display: flex;
+width: 100%;
+height: auto;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+font-weight: 500;
+font-size: 16px;
+padding: 10px;
+line-height: 1.7;
+}
+.donatebutton{
+align-self: center;
+color: rgb(39, 48, 144);
+background-color: white;
+border-radius:30px;
+border: 2px solid white;
+text-align: center;
+display: inline-block;
+padding: 10px 15px;
+font-weight: 300;
+font-weight: bold;
+text-decoration: none;
+align-items: center;
+margin-left: 33%;
+margin-top: 2%;
+}
+.donatebutton:hover{
+background-color: rgb(39, 48, 144);
+border: 2.5px solid rgb(40, 210, 202);
+color: white;
+}
+#donateimg{
+float: left;
+width: 500px;
+height: 400px;
+object-fit: contain;
+padding-right: 20px;
+}
+/* footer */
+footer{
+background-color: black;
+color: white;
+text-align: center;
+margin-top: 10px;
+padding: 20px;
+font-weight: 300;
+font-size: 20 px;
+}

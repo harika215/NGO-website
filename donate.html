@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="donate_style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Donation</title>
+</head>
+<body>
+    <header>Donation Details</header>
+    <div class="container">
+        <form action="insert.php" method="post">
+            First Name: <input type="text" name='firstname' placeholder="Enter your first name" required=""><br/>
+            Last Name: <input type="text" name='lastname'placeholder="Enter your Last name" required=""><br/>
+            <label>
+                Gender: <input type="radio" name="gender" value="male" checked> Male 
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label><br/>
+            Contact number: <input type="number" name='contact' placeholder="Enter your number" required=""><br/>
+            Country: <select id="country" name = "country" required="" style="font-family: 'Montserrat', sans-serif; font-weight:400">
+                <option selected hidden value="">Select Country</option>
+                <option value="au">India</option>
+                <option value="usa">United States of America</option>
+                <option value="brit">Great Britain</option>
+                <option value="other">Other</option>
+            </select><br/>
+            Email ID: <input type="email" name="email" placeholder="Enter your email ID" required=""><br/>
+            Amount: <input type="number"name='amount' placeholder="Enter amount to be donated" required=""><br/><br/>
+            <a id="payment" href="https://rzp.io/l/g0V1ivksvm">Submit</a>
+        </form>
+    </div>
+</body>
+</html>
